@@ -1,3 +1,56 @@
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 0 20px;
+    background: #f2f7f3;
+    color: #173c40;
+    font: 16px/1.5 system-ui, sans-serif;
+  }
+
+  .dock-header {
+    padding: 32px;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    background: linear-gradient(125deg, #123c40, #236b63);
+    color: white;
+  }
+
+  h1 {
+    margin: 8px 0;
+    font: clamp(2.5rem, 7vw, 4.5rem) Georgia, serif;
+  }
+
+  button {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 999px;
+    background: #dceca8;
+    color: #173c40;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  #sessions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .session-card {
+    padding: 16px;
+    border: 1px solid #d5e4de;
+    border-radius: 14px;
+    background: white;
+  }
+
+  .session-card h2 { margin: 0 0 6px; font-size: 1.1rem; }
+  .session-card p { margin: 0; }
+</style>
 <header class="dock-header">
   <span>Dockside Paddle Co. · Grand Canal Dock</span>
   <h1>Ask Dockside</h1>
